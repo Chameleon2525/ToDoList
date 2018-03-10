@@ -1,0 +1,449 @@
+/* SETTINGS */
+/* TOOLS */
+/* GENERIC */
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #0E506C;
+  font-family: Helvetica, sans-serif;
+  color: #082431; }
+
+body {
+  padding-top: 59px; }
+
+.main {
+  width: 90%;
+  margin-left: 5%; }
+  @media (max-width: 1199px) {
+    .main {
+      margin-top: 65px; } }
+  @media (max-width: 991px) {
+    .main {
+      margin-top: 0px; } }
+  @media (max-width: 600px) {
+    .main {
+      margin: 60px 5% 0 5%;
+      align-content: center; } }
+
+/* ELEMENTS */
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #0E506C; }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 4rem; } }
+  @media (max-width: 507px) {
+    h1 {
+      font-size: 3.5rem; } }
+
+h2 {
+  font-size: 1.3rem;
+  display: inline; }
+  @media (max-width: 750px) {
+    h2 {
+      display: block;
+      font-size: 1.3rem; } }
+
+h3, h4 {
+  font-size: 1.3rem;
+  display: block;
+  text-justify: left; }
+  @media (max-width: 600px) {
+    h3, h4 {
+      font-size: 1rem;
+      padding: 20px 0 0 0; } }
+
+h5 {
+  text-align: center;
+  font-size: 5rem;
+  color: #042733; }
+  @media (max-width: 600px) {
+    h5 {
+      font-size: 4rem; } }
+  @media (max-width: 507px) {
+    h5 {
+      font-size: 3.5rem; } }
+
+h6 {
+  text-align: left;
+  margin-left: 5%;
+  font-size: 3rem;
+  color: #042733; }
+
+.main a {
+  color: #082431;
+  display: inline;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin: 20px 0px; }
+
+.main a:hover {
+  color: #19A3DF; }
+
+hr {
+  display: block;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  background-color: #999;
+  width: 90%;
+  border: 0;
+  height: 1px;
+  margin: 2.5% 5% 2.5% 5%; }
+
+p {
+  padding-left: 4%;
+  font-size: 1.4rem;
+  min-height: 56px;
+  margin: 50px 0px; }
+  @media (max-width: 991px) {
+    p {
+      padding: 0;
+      font-size: 1.3rem; } }
+  @media (max-width: 750px) {
+    p {
+      font-size: 1.2rem; } }
+  @media (max-width: 600px) {
+    p {
+      font-size: 1rem; } }
+
+footer {
+  text-align: center;
+  clear: both;
+  font-size: 0.8rem;
+  margin-top: 200px;
+  margin-bottom: 10px; }
+
+/* OBJECTS */
+.body__wrapper {
+  padding: 30px 0 1px 0;
+  background-image: url("../Images/eggshell.jpg"); }
+
+.row {
+  text-align: center; }
+
+.container {
+  padding: 0;
+  margin: 0 2rem; }
+
+/* COMPONENTS */
+.navbar__icons {
+  padding: 0px 10px;
+  color: white; }
+
+.navbar-dark {
+  background-image: -webkit-linear-gradient(#0E506C 0%, #082431 100%);
+  background-image: -o-linear-gradient(#0E506C 0%, #082431 100%);
+  background-image: linear-gradient(#0E506C 0%, #082431 100%);
+  font-family: Helvetica, sans-serif;
+  font-size: 1.4em; }
+
+.dropdown-menu {
+  width: 220px; }
+
+.dropdown-menu a:hover {
+  background-color: #1DB9F9;
+  background-image: none; }
+
+.navbar-collapse ul {
+  float: right; }
+  .navbar-collapse ul li {
+    display: flex;
+    padding: 0px  10px;
+    align-items: center;
+    text-align: center; }
+
+.navbar-dark .navbar-brand {
+  color: #19A3DF;
+  font-size: 1.4rem; }
+
+.CV__welcome {
+  font-family: Baskerville, Helvetica, sans-serif; }
+
+.hr--small {
+  display: block;
+  background-color: #052530;
+  width: 50%;
+  height: 1px;
+  border: 0;
+  margin-left: 25%; }
+
+.music__title .music__notes {
+  font-size: 1rem;
+  padding: 0 10px; }
+
+.Course__institution, .Work__institution {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.webDev__introText {
+  display: inline;
+  font-size: 1.6rem;
+  text-align: justify; }
+
+.Course__title, .Work__title {
+  display: inline;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 20px 0px; }
+  @media (max-width: 991px) {
+    .Course__title, .Work__title {
+      font-size: 1.7rem; } }
+  @media (max-width: 750px) {
+    .Course__title, .Work__title {
+      font-size: 1.5rem; } }
+  @media (max-width: 600px) {
+    .Course__title, .Work__title {
+      font-size: 1.3rem; } }
+
+.Webdev__quote {
+  display: inline;
+  font-size: 1.5rem;
+  text-align: left;
+  text-decoration: none;
+  margin: 20px 0px;
+  font-family: Trajan; }
+  @media (max-width: 991px) {
+    .Webdev__quote {
+      padding: 0;
+      font-size: 1.3rem; } }
+  @media (max-width: 750px) {
+    .Webdev__quote {
+      font-size: 1.2rem; } }
+  @media (max-width: 600px) {
+    .Webdev__quote {
+      font-size: 1rem; } }
+
+.Webdev__icon {
+  margin-right: 15px; }
+
+.music__title {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 20px 0px; }
+  @media (max-width: 991px) {
+    .music__title {
+      font-size: 1.7rem; } }
+  @media (max-width: 750px) {
+    .music__title {
+      font-size: 1.5rem; } }
+  @media (max-width: 600px) {
+    .music__title {
+      font-size: 1.3rem; } }
+
+.Webdev__title {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  margin: 70px 0px; }
+  @media (max-width: 600px) {
+    .Webdev__title {
+      font-size: 2.4rem;
+      margin: 30px 0; } }
+
+.hr--padbottom {
+  margin-top: 80px; }
+
+.CV__intro {
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 20px 0px;
+  text-align: center; }
+  @media (max-width: 991px) {
+    .CV__intro {
+      font-size: 1.6rem; } }
+  @media (max-width: 750px) {
+    .CV__intro {
+      font-size: 1.4rem; } }
+
+.CV__container {
+  height: 176px; }
+  @media (max-width: 633px) {
+    .CV__container {
+      height: 274px; } }
+  @media (max-width: 600px) {
+    .CV__container {
+      height: 150px; } }
+  @media (max-width: 507px) {
+    .CV__container {
+      height: 125px; } }
+  @media (max-width: 443px) {
+    .CV__container {
+      height: 185px; } }
+
+.Work__disclaimer {
+  margin: 150px 0;
+  text-align: center; }
+  @media (max-width: 991px) {
+    .Work__disclaimer {
+      margin: 100px 0; } }
+
+main .Webdev__applink {
+  display: block;
+  margin: 70px 0 30px 0; }
+
+.Course__date, .Work__date {
+  float: right;
+  padding-top: 6px; }
+  @media (max-width: 750px) {
+    .Course__date, .Work__date {
+      float: left;
+      padding-left: 17px; } }
+  @media (max-width: 600px) {
+    .Course__date, .Work__date {
+      padding: 5px 0 0 0;
+      font-size: 0.9rem; } }
+
+.Course__header, .Work__role {
+  font-size: 1.5rem;
+  display: inline;
+  padding-left: 20px; }
+  @media (max-width: 750px) {
+    .Course__header, .Work__role {
+      display: block;
+      font-size: 1.3rem; } }
+  @media (max-width: 600px) {
+    .Course__header, .Work__role {
+      font-size: 1.2rem;
+      padding: 0px; } }
+
+.Course__subject, .Work__subject {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-left: 40px;
+  margin: 30px 0; }
+  @media (max-width: 750px) {
+    .Course__subject, .Work__subject {
+      display: block;
+      padding: 20px 0 0 19px; } }
+  @media (max-width: 600px) {
+    .Course__subject, .Work__subject {
+      font-size: 1rem;
+      padding: 20px 0 0 0; } }
+
+.Work__subject {
+  font-size: 1.4rem;
+  padding-left: 22px; }
+
+.Webdev__text {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1.5rem; }
+  @media (max-width: 991px) {
+    .Webdev__text {
+      padding: 0;
+      font-size: 1.3rem; } }
+  @media (max-width: 750px) {
+    .Webdev__text {
+      font-size: 1.2rem; } }
+  @media (max-width: 600px) {
+    .Webdev__text {
+      font-size: 1rem; } }
+
+.music__text {
+  font-size: 1.3rem;
+  display: inline;
+  padding: 43px 0 0 30px;
+  text-align: justify; }
+  @media (max-width: 1199px) {
+    .music__text {
+      font-size: 1.1rem; } }
+  @media (max-width: 991px) {
+    .music__text {
+      font-size: 1.1rem; } }
+  @media (max-width: 881px) {
+    .music__text {
+      padding: 0; } }
+  @media (max-width: 750px) {
+    .music__text {
+      font-size: 1.2rem; } }
+  @media (max-width: 600px) {
+    .music__text {
+      font-size: 1rem; } }
+
+.Music__video {
+  margin: 50px 0; }
+  @media (max-width: 881px) {
+    .Music__video {
+      width: 80%;
+      margin-left: 10%; } }
+  @media (max-width: 750px) {
+    .Music__video {
+      height: 250px; } }
+  @media (max-width: 600px) {
+    .Music__video {
+      height: 180px; } }
+
+.music__container {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 881px) {
+    .music__container {
+      display: block;
+      text-align: justify; } }
+
+.Container--center {
+  margin: 0 auto;
+  text-align: center; }
+
+/*UTILITIES*/
+@media all and (max-width: 991px) {
+  .navbar-nav .dropdown-menu {
+    position: absolute; } }
+@media all and (max-width: 881px) {
+  p.BP {
+    font-size: 1.1rem; } }
+@media all and (max-width: 750px) {
+  .Row--margintp-lg {
+    margin-top: 60px; }
+
+  .Row--margintp-md {
+    margin-top: 40px;
+    font-size: 0.8rem; }
+
+  .Course__date, .Work__subject {
+    font-size: 1.2rem; }
+
+  p.BP {
+    font-size: 1rem; } }
+@media all and (max-width: 600px) {
+  .navbar .container {
+    display: block;
+    text-align: center; }
+
+  .navbar-collapse ul {
+    float: none;
+    align-items: center; }
+
+  .Row--margintp-md {
+    margin-top: 20px; }
+
+  .Row--margintp-lg {
+    margin-top: 40px; }
+
+  p.BP {
+    margin: 10px 15px;
+    display: inline-block; }
+
+  .main__animation {
+    margin: 30px 5% 0 5%;
+    align-content: center; } }
+@media all and (max-width: 575px) {
+  p.p--big {
+    font-size: 1.3rem; } }
+/*TRUMPS*/
+
+/*# sourceMappingURL=index.css.map */
