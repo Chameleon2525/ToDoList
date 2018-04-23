@@ -33,6 +33,7 @@ body {
 h1 {
   text-align: center;
   font-size: 5rem;
+  display: inline;
   color: #0E506C; }
   @media (max-width: 600px) {
     h1 {
@@ -60,6 +61,7 @@ h3, h4 {
 
 h5 {
   text-align: center;
+  display: inline;
   font-size: 5rem;
   color: #042733; }
   @media (max-width: 600px) {
@@ -99,7 +101,7 @@ p {
   padding-left: 4%;
   font-size: 1.4rem;
   min-height: 56px;
-  margin: 50px 0px; }
+  margin: 30px 0px; }
   @media (max-width: 991px) {
     p {
       padding: 0;
@@ -110,6 +112,7 @@ p {
   @media (max-width: 600px) {
     p {
       font-size: 1rem; } }
+
 
 footer {
   text-align: center;
@@ -129,6 +132,11 @@ footer {
 .container {
   padding: 0;
   margin: 0 2rem; }
+
+.col-sm-4{
+  padding-left: 80px;
+  text-align: left;
+}
 
 /* COMPONENTS */
 .navbar__icons {
@@ -225,12 +233,12 @@ footer {
 .music__title {
   text-align: center;
   display: block;
-  font-size: 2rem;
-  text-decoration: underline;
+  font-size: 1.5rem;
   margin: 20px 0px; }
   @media (max-width: 991px) {
     .music__title {
-      font-size: 1.7rem; } }
+      font-size: 1.1
+      2rem; } }
   @media (max-width: 750px) {
     .music__title {
       font-size: 1.5rem; } }
@@ -266,7 +274,10 @@ footer {
       font-size: 1.4rem; } }
 
 .CV__container {
-  height: 176px; }
+  height: 176px;
+  text-align: center;
+  margin: 0 auto;
+ }
   @media (max-width: 633px) {
     .CV__container {
       height: 274px; } }
@@ -443,7 +454,10 @@ main .Webdev__applink {
     align-content: center; } }
 @media all and (max-width: 575px) {
   p.p--big {
+
     font-size: 1.3rem; } }
 /*TRUMPS*/
 
 /*# sourceMappingURL=index.css.map */
+
+

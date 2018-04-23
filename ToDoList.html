@@ -8,22 +8,22 @@
     </head>
 
     <body>
+        <main>
+            <div class="Todo__backLink"><a href = "webdev.html">BACK TO SITE</a></div>
+            <h1>To Do List</h1>
 
-        <div class="Todo__backLink"><a href = "webdev.html">BACK TO SITE</a></div>
-        <h1>To Do List</h1>
-        <hr class = "small">
+            <div class="Webapp__container">
+                    <button id = "toggleAllButton" onclick = "handlers.toggleAll()"><i id = "toggleIcon" class="fa fa-toggle-off" aria-hidden="true"></i></button>
+                    <input id="addTodoTextInput" type="text">
+                    <button id = "addTodoButton" onclick = "handlers.addTodo()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                <ul>
+                </ul>
+            </div>
 
-        <div class="Webapp__container">
-                <button id = "toggleAllButton" onclick = "handlers.toggleAll()"><i id = "toggleIcon" class="fa fa-toggle-off" aria-hidden="true"></i></button>
-                <input id="addTodoTextInput" type="text">
-                <button id = "addTodoButton" onclick = "handlers.addTodo()"><i class="fa fa-plus" aria-hidden="true"></i></button>
-            <ul>
-            </ul>
-        </div>
-
-        <script src="https://use.fontawesome.com/a3a009cd80.js"></script>
-        <script src = "JS/jquery-3.2.1.min.js"></script>
-        <script src = "JS/ToDoListV11.js"></script>
+            <script src="https://use.fontawesome.com/a3a009cd80.js"></script>
+            <script src = "JS/jquery-3.2.1.min.js"></script>
+            <script src = "JS/ToDoListV11.js"></script>
+        </main>
     </body>
 
 </html>

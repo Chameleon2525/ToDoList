@@ -80,18 +80,23 @@ var view = {
     todoList.todos.forEach(function(todo, position){
 
       var todoLi = document.createElement('li');
+
+
       todoLi.textContent = todo.todoText;
       todoLi.id = position; //gives each li element a unique id
-      todoLi.appendChild(this.createDeleteButton()); //adds delete button to diplay function
+      debugger;
+      var deleteButton = todoLi.appendChild(this.createDeleteButton()); //adds delete button to display function
+      todoLi.insertBefore(todoLi.childNodes[1], todoLi.childNodes[0]); //put delete button first
 
       //Change toDo element
       var toggleButton = todoLi.appendChild(this.createToggleTodoButton());
 
+      todoLi.appendChild(document.createElement("hr")); //add horizontal line
       if(todo.completed === true){
         toggleButton.firstChild.className = 'fa fa-check-circle-o';
         todoLi.style.cssText = "text-decoration: line-through";
      }
-
+    
       todosUl.appendChild(todoLi);
     }, this); //this is now specifying the object for this callback function
   },
